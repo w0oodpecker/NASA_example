@@ -11,9 +11,9 @@ public class Nasa {
     @SerializedName("hdurl")
     private String hdurl; // - hdurl
     @SerializedName("media_type")
-    private String media_type; // - тип медиа
+    private String mediaType; // - тип медиа
     @SerializedName("service_version")
-    private String service_version; // - версия сервиса
+    private String serviceVersion; // - версия сервиса
     @SerializedName("title")
     private String title; // - заголовок
     @SerializedName("url")
@@ -23,16 +23,16 @@ public class Nasa {
             String date,
             String explanation,
             String hdurl,
-            String media_type,
-            String service_version,
+            String mediaType,
+            String serviceVersion,
             String title,
             String url
     ) {
         this.date = date;
         this.explanation = explanation;
         this.hdurl = hdurl;
-        this.media_type = media_type;
-        this.service_version = service_version;
+        this.mediaType = mediaType;
+        this.serviceVersion = serviceVersion;
         this.title = title;
         this.url = url;
     }
@@ -43,8 +43,8 @@ public class Nasa {
         return "\n date = " + date +
                 "\n explanation = " + explanation +
                 "\n hdurl = " + hdurl +
-                "\n media_type = " + media_type +
-                "\n service_version = " + service_version +
+                "\n media_type = " + mediaType +
+                "\n service_version = " + serviceVersion +
                 "\n title = " + title +
                 "\n url = " + url;
     }
